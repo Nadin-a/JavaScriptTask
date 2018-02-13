@@ -1,1 +1,3 @@
-# JavaScriptTask
+# JavaScript Exercises
+
+JavaScript Exercises
