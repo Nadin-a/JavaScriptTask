@@ -1,17 +1,5 @@
-camelize = function camelize(str) {
-  return str.replace(/\W+(.)/g, function(match, chr)
-  {
-    return chr.toUpperCase();
-  });
-};
-
-const camelCase = str => {
-  return str.replace(/\b\w/g, l => l.toUpperCase())
-};
-const underscore = str => {
-  return str.toLowerCase();
-};
-
+const camelCase = str =>  str.replace(/\b\w/g, l => l.toUpperCase());
+const underscore = str => str.toLowerCase();
 
 const formalize = (str, type) =>{
   let nstr = str.split(' ');

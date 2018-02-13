@@ -1,12 +1,11 @@
-const array = [2, -500, 7, 6, 3, 125, 9];
-const min_index = array.indexOf(Math.min(...array));
-const max_index = array.indexOf(Math.max(...array));
-sub_arr = [];
-if (min_index > max_index) {
-  sub_arr = array.slice((max_index + 1), min_index);
+const ARRAY = [2, -500, 7, 6, 3, 125, 9];
+const MIN_INDEX = ARRAY.indexOf(Math.min(...ARRAY));
+const MAX_INDEX = ARRAY.indexOf(Math.max(...ARRAY));
+let sub_arr = [];
+if (MIN_INDEX > MAX_INDEX) {
+  sub_arr = ARRAY.slice((MAX_INDEX + 1), MIN_INDEX);
 }
 else {
-  sub_arr = array.slice((min_index + 1), max_index);
+  sub_arr = ARRAY.slice((MIN_INDEX + 1), MAX_INDEX);
 }
 console.log(sub_arr.reverse());
-

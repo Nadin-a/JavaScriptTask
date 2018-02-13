@@ -20,6 +20,6 @@ const compressArray = original => {
 };
 
 
-let words = 'this is my array this is array full of words'.split(' ');
+let words = 'this is my ARRAY this is ARRAY full of words'.split(' ');
 compressArray(words);
 console.log(compressArray(words));

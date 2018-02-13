@@ -1,5 +1,5 @@
 const R = 2.645;
-const arr = [
+const ARR = [
   2.646,
   4.23423,
   7.8678,
@@ -19,7 +19,7 @@ const arr = [
 
 let res = 0;
 let min = Math.abs(R);
-for(let num of arr){
+for(let num of ARR){
   if(Math.abs(R - num) < min){
     min = Math.abs(R - num);
     res = num;
