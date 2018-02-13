@@ -9,3 +9,4 @@ else {
   sub_arr = array.slice((min_index + 1), max_index);
 }
 console.log(sub_arr.reverse());
+
