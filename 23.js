@@ -1,17 +1,17 @@
-const camelCase = str =>  str.replace(/\b\w/g, l => l.toUpperCase());
+const camelCase = str => str.replace(/\b\w/g, l => l.toUpperCase());
 const underscore = str => str.toLowerCase();
 
-const formalize = (str, type) =>{
-  let nstr = str.split(' ');
-  switch(type){
-    case 'camel':{
-      return nstr.map(camelCase).join(' ');
+const formalize = (str, type) => {
+  let newStr = str.split(' ');
+  switch (type) {
+    case 'camel': {
+      return newStr.map(camelCase).join(' ');
     }
-    case 'underscore':{
-      return nstr.map(underscore).join('_');
+    case 'underscore': {
+      return newStr.map(underscore).join('_');
     }
-    case 'css':{
-      return nstr.map(underscore).join('-');
+    case 'css': {
+      return newStr.map(underscore).join('-');
     }
   }
 };

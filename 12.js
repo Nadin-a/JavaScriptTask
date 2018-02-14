@@ -19,11 +19,11 @@ const ARR = [
 
 let res = 0;
 let min = Math.abs(R);
-for(let num of ARR){
-  if(Math.abs(R - num) < min){
+ARR.forEach(num => {
+  if (Math.abs(R - num) < min) {
     min = Math.abs(R - num);
     res = num;
   }
-}
+});
 
 console.log(res);

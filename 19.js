@@ -1,13 +1,13 @@
 let text = 'Дан текст. Заменить все , на . и наоборот..'.split('');
 
 const replacing = ch => {
-  if(ch ===  ','){
+  if (ch === ',') {
     return '.';
   }
-  else if(ch ===  '.'){
+  else if (ch === '.') {
     return ',';
   }
-  else{
+  else {
     return ch;
   }
 };

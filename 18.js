@@ -10,8 +10,8 @@ const compressArray = original => {
       }
     }
     if (myCount > 0) {
-      let a = [];
-      a.value = original[i] ;
+      let a = {};
+      a.value = original[i];
       a.count = myCount;
       compressed.push(a);
     }

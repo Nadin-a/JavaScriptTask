@@ -6,12 +6,9 @@ const hashes = hash => Object.values(hash).map(positive);
 console.log(INIT_ARR.map(hashes).join());
 
 // 2
-
-const firstNegativeA = hash => hash.a < 0;
-console.log(INIT_ARR.find(firstNegativeA));
+console.log(INIT_ARR.find(hash => hash.a < 0));
 
 // 3
-
 const reducer = (accumulator, currentValue) => accumulator + currentValue;
 const firstA = hash => hash.a;
 const firstB = hash => hash.b;
